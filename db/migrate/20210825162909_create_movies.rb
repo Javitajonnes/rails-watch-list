@@ -3,8 +3,8 @@ class CreateMovies < ActiveRecord::Migration[6.0]
     create_table :movies do |t|
       t.text :title
       t.text :overview
-      t.url :poster_url
-      t.real :rating
+      t.text :poster_url
+      t.float :rating
 
       t.timestamps
     end
